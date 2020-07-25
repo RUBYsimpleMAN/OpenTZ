@@ -5,6 +5,7 @@ import H3 from './components/atomicD/atoms/H3';
 import DropDown from './components/atomicD/atoms/DropDown';
 import Input from './components/atomicD/atoms/Input';
 import EmailInput from './components/atomicD/atoms/EmailInput';
+import Button from './components/atomicD/atoms/Button';
 
 class App extends Component {
   render() {
@@ -30,6 +31,8 @@ class App extends Component {
           placeholder="asdasd"
         />
         <EmailInput/>
+        <Button >click me</Button>
+        <Button filled>click me</Button>
       </div>
     );
   }

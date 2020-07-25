@@ -11,6 +11,8 @@ export const main = {
     purple: "#BC9CFF",
 
     /* Green */
-    green: "#6FCF97"
+    green: "#6FCF97",
+
+    lightBlue: "#8BA4F9"
   }
 }

@@ -3,19 +3,15 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 import { main } from '../../themes/themes';
 import arrowDownPath from './arrow-down.svg';
+import ComplexInputWrapper from './ComplexInputWrapper';
 
-const Wrapper = styled.div`
+
+const Wrapper = styled(ComplexInputWrapper)`
   &:after {
     content: url("${arrowDownPath}");
-    position: absolute;
     top: calc(50% - 12px);
     right: 1rem;
-    z-index: 1;
-    pointer-events: none;
   }
-  width: 320px;
-  position: relative;
-  /* display: inline-block; */
 `;
 
 const DropButton = styled.button`
