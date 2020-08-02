@@ -6,7 +6,7 @@ import DropDown from './components/atomicD/atoms/DropDown';
 import Input from './components/atomicD/atoms/Input';
 import EmailInput from './components/atomicD/atoms/EmailInput';
 import Button from './components/atomicD/atoms/Button';
-
+import RadioButton from './components/atomicD/atoms/RadioButton';
 class App extends Component {
   render() {
     return (
@@ -32,7 +32,17 @@ class App extends Component {
         />
         <EmailInput/>
         <Button >click me</Button>
-        <Button filled>click me</Button>
+        <Button filled>click me</Button><br/><br/>
+        <form>
+          <RadioButton id="asdasd1" name="asdasd" value="Мужчина" defaultChecked />
+          <RadioButton id="asdasd2" name="asdasd" value="Женщина" />
+          <RadioButton id="asdasd3" name="asdasd" value="Иное">
+            Инопланетянин
+          </RadioButton>
+          <RadioButton id="asdasd3" name="asdasd" value="Иное">
+            <H2 as="span"> Robot </H2>
+          </RadioButton>
+        </form>
       </div>
     );
   }
