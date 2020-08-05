@@ -7,6 +7,9 @@ import Input from './components/atomicD/atoms/Input';
 import EmailInput from './components/atomicD/atoms/EmailInput';
 import Button from './components/atomicD/atoms/Button';
 import RadioButton from './components/atomicD/atoms/RadioButton';
+import CounterRow from './components/atomicD/atoms/CounterRow';
+import HotelGuestDropdown from "./components/atomicD/atoms/HotelGuestDropdown";
+
 class App extends Component {
   render() {
     return (
@@ -39,10 +42,17 @@ class App extends Component {
           <RadioButton id="asdasd3" name="asdasd" value="Иное">
             Инопланетянин
           </RadioButton>
-          <RadioButton id="asdasd3" name="asdasd" value="Иное">
+          <RadioButton id="asdasd4" name="asdasd" value="Иное">
             <H2 as="span"> Robot </H2>
           </RadioButton>
         </form>
+        <CounterRow
+          value={ 0 }
+          min={ 0 }
+          max={ 5 }
+          fieldname="qwe123"
+        />
+        <HotelGuestDropdown/>
       </div>
     );
   }

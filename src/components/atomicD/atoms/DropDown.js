@@ -43,17 +43,18 @@ const DropButton = styled.button`
 `;
 
 const Content = styled.div`
-  display: none;
-  position: absolute;
-  background-color: #FFFFFF;
   width: 100%;
+  box-sizing: border-box;
+  display: none;
+  padding: 0px 0px 0px 14px;
+  position: absolute;
   overflow: hidden;
-  z-index: 1;
+  z-index: 2;
+
+  background-color: #FFFFFF;
   border: 1px solid ${ main.colors.darkShade50 };
   border-top: none;
   border-radius: 0 0 4px 4px;
-  box-sizing: border-box;
-  padding: 5px;
 `;
 
 const contentStylesWhenShow = {
@@ -69,22 +70,26 @@ class DropDown extends Component {
   state = {
     isHidden: true
   }
-  onClick = (event) => {
+  onExpand = (event) => {
     event.stopPropagation();
     this.setState({
       isHidden: !this.state.isHidden
     });
   }
+  onContentClick = event => {
+    event.stopPropagation();
+    this.props.onContentClick( event.target.dataset, event.target.textContent );
+  }
   render() {
     return (
       <Wrapper>
         <DropButton
-          onClick={ this.onClick }
+          onClick={ this.onExpand }
           style={ this.state.isHidden ? withoutStyles : dropButtonStylesWhenShow }
-        >
-          Dropdown
-        </DropButton>
+          children={ this.props.title }
+        />
         <Content
+          onClick={ this.onContentClick }
           style={ this.state.isHidden ? withoutStyles : contentStylesWhenShow }
           children={ this.props.children }
         />
