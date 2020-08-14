@@ -1,6 +1,6 @@
-import styled from 'styled-components';
-import { main } from '../../themes/themes';
-import React, { Component } from 'react';
+import styled from "styled-components";
+import { main } from "../../themes/themes";
+import React, { Component } from "react";
 const Input = styled.input`
   & {
     position: absolute;
@@ -28,7 +28,7 @@ const ClickableContent = styled.div`
     width: fit-content;
   }
   &:before {
-    content: '';
+    content: "";
     position: absolute;
     top: calc(50% - 10px);
     left: 0;
@@ -40,7 +40,7 @@ const ClickableContent = styled.div`
     box-sizing: border-box;
   }
   &:after {
-    content: '';
+    content: "";
     position: absolute;
     top: calc(50% - 6px);
     left: 4px;

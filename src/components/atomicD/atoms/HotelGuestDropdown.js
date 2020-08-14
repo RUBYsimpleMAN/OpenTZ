@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 import DropDown from "./DropDown";
-import CounterRow from './CounterRow';
+import CounterRow from "./CounterRow";
 import createWordEnding from "./createWordEnding";
 
 class HotelGuestDropdown extends Component {

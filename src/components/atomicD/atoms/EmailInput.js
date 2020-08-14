@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
-import Input from './Input';
-import styled from 'styled-components';
-import emailArrowPath from './email-arrow.svg';
-import ComplexInputWrapper from './ComplexInputWrapper';
+import React, { Component } from "react";
+import Input from "./Input";
+import styled from "styled-components";
+import emailArrowPath from "./email-arrow.svg";
+import ComplexInputWrapper from "./ComplexInputWrapper";
 
 const Wrapper = styled(ComplexInputWrapper)`
   &:after {

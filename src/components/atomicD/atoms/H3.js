@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import { main } from '../../themes/themes'
+import styled from "styled-components";
+import { main } from "../../themes/themes"
 
 const H3 = styled.h3`
   font-style: normal;

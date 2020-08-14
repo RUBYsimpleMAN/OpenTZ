@@ -1,9 +1,9 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React, { Component } from 'react';
-import styled from 'styled-components';
-import { main } from '../../themes/themes';
-import arrowDownPath from './arrow-down.svg';
-import ComplexInputWrapper from './ComplexInputWrapper';
+import React, { Component } from "react";
+import styled from "styled-components";
+import { main } from "../../themes/themes";
+import arrowDownPath from "./arrow-down.svg";
+import ComplexInputWrapper from "./ComplexInputWrapper";
 
 
 const Wrapper = styled(ComplexInputWrapper)`

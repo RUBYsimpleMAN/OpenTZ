@@ -1,6 +1,6 @@
-import React, { PureComponent } from 'react';
-import styled from 'styled-components';
-import { main } from '../../themes/themes';
+import React, { PureComponent } from "react";
+import styled from "styled-components";
+import { main } from "../../themes/themes";
 
 const Wrapper = styled.div`
   width: 300px;

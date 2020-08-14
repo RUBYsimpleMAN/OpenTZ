@@ -1,10 +1,7 @@
-import styled from 'styled-components';
-import { main } from '../../themes/themes';
+import styled from "styled-components";
+import { main } from "../../themes/themes";
 
 const Button = styled.button`
-  &:disabled {
-
-  }
   &:hover, &:focus {
     outline:none;
   }
@@ -39,7 +36,7 @@ const Button = styled.button`
   text-transform: uppercase;
 
   &:before {
-    content: '';
+    content: "";
     position: absolute;
     top: 0; right: 0; bottom: 0; left: 0;
     z-index: -1;

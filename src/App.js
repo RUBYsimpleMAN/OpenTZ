@@ -1,16 +1,21 @@
-import React, { Component } from 'react';
-import H1 from './components/atomicD/atoms/H1';
-import H2 from './components/atomicD/atoms/H2';
-import H3 from './components/atomicD/atoms/H3';
-import DropDown from './components/atomicD/atoms/DropDown';
-import Input from './components/atomicD/atoms/Input';
-import EmailInput from './components/atomicD/atoms/EmailInput';
-import Button from './components/atomicD/atoms/Button';
-import RadioButton from './components/atomicD/atoms/RadioButton';
-import CounterRow from './components/atomicD/atoms/CounterRow';
+import React, { Component } from "react";
+import H1 from "./components/atomicD/atoms/H1";
+import H2 from "./components/atomicD/atoms/H2";
+import H3 from "./components/atomicD/atoms/H3";
+import DropDown from "./components/atomicD/atoms/DropDown";
+import Input from "./components/atomicD/atoms/Input";
+import EmailInput from "./components/atomicD/atoms/EmailInput";
+import Button from "./components/atomicD/atoms/Button";
+import RadioButton from "./components/atomicD/atoms/RadioButton";
+import CounterRow from "./components/atomicD/atoms/CounterRow";
 import HotelGuestDropdown from "./components/atomicD/atoms/HotelGuestDropdown";
+import RateButton from "./components/atomicD/atoms/RateButton";
 
 class App extends Component {
+  state = {
+    roomRating: 3
+  }
+  setNewRoomRaiting = rating => this.setState( { roomRating: rating } );
   render() {
     return (
       <div>
@@ -53,6 +58,10 @@ class App extends Component {
           fieldname="qwe123"
         />
         <HotelGuestDropdown/>
+        <RateButton
+          rating={ this.state.roomRating }
+          onChangeRating={ this.setNewRoomRaiting }
+        />
       </div>
     );
   }
